@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <title>Yoda</title>
+    <script>
+        function showSpeechBubble() {
+            const bubble = document.querySelector('.speech-bubble');
+            bubble.style.display = 'block';
+            setTimeout(() => {
+                bubble.style.display = 'none';
+            }, 5000);
+        }
+        setInterval(showSpeechBubble, 6000); // A cada 6 segundos
+    </script>
+</head>
+<body>
+    <div class="baby-yoda">
+        <div class="speech-bubble">Oii, Nycolee!! Muito a aprender você ainda tem :)</div>
+    </div>
+</body>
+</html>
+
